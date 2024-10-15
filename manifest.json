@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Google-Scholar(SCI-HUB)",
+  "version": "1.0.1",
+  "description": "Include a direct connection to Sci-Hub in Google Scholar searches.",
+  "homepage_url": "https://github.com/PankPanther/Google-Scholar-SCI-HUB",
+  "icons": {
+    "48": "icon-48.png",
+    "96": "icon-96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "sci-hub_include.js"
+      ]
+    }
+  ]
+}
